@@ -2,7 +2,8 @@
 
 using namespace std;
 typedef long long ll;
-
+// main issue that i faced is that i used pow function and it does not work for large numbers as it can work correct till 15-16 decimal digits
+// because it works on double .
 int T;
 ll X, Y;
 
