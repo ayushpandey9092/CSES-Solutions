@@ -1,15 +1,24 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-typedef long long ll;
+// combination of placing all- combination of attack
+// hint - check for all 8 directon knight cann move and remove dublicates.
+int main() {
+	// your code goes here
+	long long int n ;
+	cin>>n;
+        for(long long int i=1;i<=n;i++)
+        {
+            if(i==1)cout<<0<<endl;
+            else
+            {
+                long long count=0;
+                long long q=i*i;
+                count+=(q*(q-1))/2;
+                count-=(i-2)*(i-1)*4;
+                cout<<count<<endl;
+            }
+        }
+	
 
-int N;
-
-int main(){
-    scanf("%d", &N);
-    for(int k = 1; k <= N; k++){
-        ll cnt = 1LL + (k-1)*(k-2)/2;
-        cnt = cnt * (k-1) * (k+4);
-        printf("%lld\n", cnt);
-    }
 }
+
