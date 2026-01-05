@@ -25,3 +25,63 @@ int main(){
             printf("%d %d ", i, N-i+1);
     }
 }
+// anathor way 
+#include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     long long n;
+//     cin >> n;
+
+//     long long sum = n * (n + 1) / 2;
+
+//     if (sum % 2 != 0) {
+//         cout << "NO\n";
+//         return 0;
+//     }
+
+//     cout << "YES\n";
+
+//     long long half = sum / 2;
+//     long long cnt1 = 0;
+
+//     // Pass 1: count size of set 1
+//     for (long long i = n; i >= 1; i--) {
+//         if (half >= i) {
+//             half -= i;
+//             cnt1++;
+//         }
+//     }
+
+//     long long cnt2 = n - cnt1;
+
+//     // Print size of set 1
+//     cout << cnt1 << "\n";
+
+//     // Pass 2: print elements of set 1
+//     half = sum / 2;
+//     for (long long i = n; i >= 1; i--) {
+//         if (half >= i) {
+//             cout << i << " ";
+//             half -= i;
+//         }
+//     }
+//     cout << "\n";
+
+//     // Print size of set 2
+//     cout << cnt2 << "\n";
+
+//     // Pass 3: print elements of set 2
+//     half = sum / 2;
+//     for (long long i = n; i >= 1; i--) {
+//         if (half >= i) {
+//             half -= i;
+//         } else {
+//             cout << i << " ";
+//         }
+//     }
+//     cout << "\n";
+
+//     return 0;
+// }
+
